@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+        <h1>Dustbin Management</h1>
+           <a onclick="order()" style="grid-column:4/5 ;" onmouseover="hov(0)" onmouseleave="nhov(0)"> Route <hr></a>
+           <a  onmouseover="hov(1)" onmouseleave="nhov(1)" onclick="login()">State <hr></a>
+           <a href="/profile" onmouseover="hov(2)" onmouseleave="nhov(2)" >Profile <hr></a>
+      </div>
+      <div id="map">
+        map
+      </div>
+      <div id="info">
+        details
+      </div>
+      <script>
+        function hov( k){
+        document.getElementsByTagName("hr")[k].style.display="block";}
+        function nhov( k){
+        document.getElementsByTagName("hr")[k].style.display="none";}
+
+      </script>
+</body>
+</html>
